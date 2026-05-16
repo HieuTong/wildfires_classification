@@ -1,0 +1,62 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}A. Task Definition and Dataset Description}{1}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Prediction task}{1}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Dataset characteristics}{1}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Why this dataset is challenging}{2}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}B. Exploratory Data Analysis and Data Handling}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Exploratory analysis}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Training class distribution for \texttt  {fire\_intensity}.}}{2}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:classdist}{{1}{2}{Training class distribution for \texttt {fire\_intensity}}{figure.caption.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Representative numerical feature distributions. The skewness and outliers motivate median imputation and model scaling.}}{3}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:dist1}{{2}{3}{Representative numerical feature distributions. The skewness and outliers motivate median imputation and model scaling}{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Geographic feature distributions, reflecting the multi-region scope of the dataset.}}{3}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:dist2}{{3}{3}{Geographic feature distributions, reflecting the multi-region scope of the dataset}{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Preprocessing}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}C. Model Development and Performance Analysis}{3}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Evaluation framework}{3}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Correlation heatmap over numerical features. Strong pairwise correlations are limited, suggesting that several features contribute complementary rather than redundant information.}}{4}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:corr}{{4}{4}{Correlation heatmap over numerical features. Strong pairwise correlations are limited, suggesting that several features contribute complementary rather than redundant information}{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Decision Tree}{4}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Decision Tree complexity sweep over \texttt  {max\_depth}. Training performance increases much faster than validation performance, showing overfitting at large depths.}}{5}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:dtdepth}{{5}{5}{Decision Tree complexity sweep over \texttt {max\_depth}. Training performance increases much faster than validation performance, showing overfitting at large depths}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}SVM}{5}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Neural Network}{5}{subsection.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Cost-complexity pruning sweep. Moderate pruning improves validation macro-F1, while aggressive pruning underfits.}}{6}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:dtprune}{{6}{6}{Cost-complexity pruning sweep. Moderate pruning improves validation macro-F1, while aggressive pruning underfits}{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}D. Model Comparison}{6}{section.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Validation performance comparison. Macro-F1 is the main criterion because it reflects balanced performance across all classes.}}{6}{table.caption.15}\protected@file@percent }
+\newlabel{tab:compare}{{1}{6}{Validation performance comparison. Macro-F1 is the main criterion because it reflects balanced performance across all classes}{table.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Top levels of the final Decision Tree. The tree is interpretable and highlights the most influential feature splits.}}{7}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:dttree}{{7}{7}{Top levels of the final Decision Tree. The tree is interpretable and highlights the most influential feature splits}{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Kernel comparison and regularisation sweep for SVM. The linear kernel is simpler; the RBF kernel has higher capacity and is more sensitive to regularisation.}}{7}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:svmkernel}{{8}{7}{Kernel comparison and regularisation sweep for SVM. The linear kernel is simpler; the RBF kernel has higher capacity and is more sensitive to regularisation}{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}E. Final Model Selection, Justification, and Evaluation}{7}{section.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Effect of model capacity \texttt  {C}. As \texttt  {C} increases, training performance rises faster than validation performance, indicating overfitting risk.}}{8}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:svmC}{{9}{8}{Effect of model capacity \texttt {C}. As \texttt {C} increases, training performance rises faster than validation performance, indicating overfitting risk}{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces RBF kernel \texttt  {gamma} sweep. Moderate values work best; overly large \texttt  {gamma} makes the boundary too complex.}}{8}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:svmgamma}{{10}{8}{RBF kernel \texttt {gamma} sweep. Moderate values work best; overly large \texttt {gamma} makes the boundary too complex}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}F. Ethical Considerations and Professional Responsibilities}{8}{section.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Validation confusion matrix for the tuned SVM. The model separates the classes moderately well, but minority classes remain difficult.}}{9}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:svmcm}{{11}{9}{Validation confusion matrix for the tuned SVM. The model separates the classes moderately well, but minority classes remain difficult}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Learning-rate sweep for the neural network. Stable convergence depends strongly on the step size.}}{9}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:nnlr}{{12}{9}{Learning-rate sweep for the neural network. Stable convergence depends strongly on the step size}{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}G. Conclusion}{9}{section.8}\protected@file@percent }
+\bibcite{sklearn}{1}
+\bibcite{pytorch}{2}
+\bibcite{course}{3}
+\bibcite{dataset}{4}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Hidden-size sweep for the neural network. Wider networks improve capacity, but validation gains saturate.}}{10}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:nnhidden}{{13}{10}{Hidden-size sweep for the neural network. Wider networks improve capacity, but validation gains saturate}{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Validation confusion matrix for the neural network. The model is less balanced than the pruned tree.}}{10}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:nncm}{{14}{10}{Validation confusion matrix for the neural network. The model is less balanced than the pruned tree}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}H. References}{10}{section.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Validation performance comparison. The pruned Decision Tree has the highest macro-F1.}}{11}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:comp}{{15}{11}{Validation performance comparison. The pruned Decision Tree has the highest macro-F1}{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Test confusion matrix for the final pruned Decision Tree.}}{11}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:testcm}{{16}{11}{Test confusion matrix for the final pruned Decision Tree}{figure.caption.17}{}}
+\gdef \@abspage@last{11}
